@@ -13,7 +13,7 @@ if __name__ == '__main__':
     q = Queue("low")
 
     result = q.enqueue(count_words_at_url, "https://www.heroku.com/")
-    print(result.result)
-    sleep(5)
-    print(result.result)
+    while not result.result:
+        sleep(1)
+        print(result.result)
 
