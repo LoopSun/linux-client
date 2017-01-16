@@ -32,8 +32,7 @@ data format:
 import requests
 
 from settings.server import POST_SERVER
-#todo: to complete data crypto logic
-from utils import data_crypto
+from utils.authentication import data_crypto
 
 #todo: To complete queue logic
 DATA_QUEUE = ""
